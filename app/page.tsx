@@ -1,10 +1,9 @@
 import AcmeLogo from "@/app/ui/acme-logo";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import styles from './ui/home.module.css'
-import { lusitana } from "./ui/fonts";
+import styles from '@/app/ui/home.module.css'
+import { lusitana } from "@/app/ui/fonts";
 import Image from "next/image";
-export const placeHolderImage: string = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAE0lEQVR42mP88O7DfwY8gJH2CgDB7A85onfltQAAAABJRU5ErkJggg==";
 
 export default function Page() {
   return (
@@ -30,7 +29,7 @@ export default function Page() {
           </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          <Image placeholder="blur" blurDataURL={placeHolderImage} className="hidden md:block" src={"/hero-desktop.png"} height={760} width={1000} alt="desktop desctioption" />
+          <Image placeholder="blur" blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAE0lEQVR42mP88O7DfwY8gJH2CgDB7A85onfltQAAAABJRU5ErkJggg==" className="hidden md:block" src={"/hero-desktop.png"} height={760} width={1000} alt="desktop desctioption" />
           <Image placeholder="blur" blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAE0lEQVR42mP88O7DfwY8gJH2CgDB7A85onfltQAAAABJRU5ErkJggg==" quality={75} className="block md:hidden" width={560} height={620} src={"/hero-mobile.png"} alt="mobile image i suppose"/>
        </div>
       </div>
